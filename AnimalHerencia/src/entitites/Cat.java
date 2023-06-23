@@ -16,8 +16,23 @@ package entitites;
  * @author Ali
  */
 public class Cat extends Animal{
+
+    public Cat() {
+    }
+
+    public Cat(String nombre, String alimento, Integer edad, String raza) {
+        super(nombre, alimento, edad, raza);
+    }
+    
      @Override
+     
     public void makeNoise(){
          System.out.println("cat: meow");
     }
+
+    @Override
+    public void Alimentarse() {
+        super.Alimentarse(); //To change body of generated methods, choose Tools | Templates.
+    }
+    
 }

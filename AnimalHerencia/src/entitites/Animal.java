@@ -16,9 +16,26 @@ package entitites;
  * @author Ali
  */
 public class Animal {
+    private String nombre, alimento;
+    private Integer edad;
+    private String raza;
+
+    public Animal() {
+    }
+
+    public Animal(String nombre, String alimento, Integer edad, String raza) {
+        this.nombre = nombre;
+        this.alimento = alimento;
+        this.edad = edad;
+        this.raza = raza;
+    }
+    
     
     
     public void makeNoise(){
         System.out.println("animal noises");
+    }
+    public void Alimentarse(){
+        System.out.println(alimento);
     }
 }
